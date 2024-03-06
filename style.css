@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+body{
+    background-color:salmon;
+    font-family: cursive;
+    /* font-family: sans-serif; */
+    height: 100vh;
+    width: 100vw;
+    
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    /* align-items:center is not working when height is in % such as 100%*/
+    align-items: center; 
+}
+
+
+.container{
+    background-color:lightpink;
+    border-radius: 10px;
+    width: 400px;
+    /*we have specified height and justify-content: space-around; as it's direction is column so we are making it such a ways that we dont need to provide padding and margin to different/majority elements , if we would not have  provided height then we would have given padding and margin to different/majority elements of the content , so better to use height and OP flexbox */
+    height: 250px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding: 20px;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+.textarea{
+    resize: none;
+    font-size: 16px;
+    border: 2px solid grey;
+}
+
+
+.counter-container{
+    display: flex;
+    justify-content: space-between ;
+}
+p{
+    color: gray;
+    font-size: 18px;
+}
+
+.total-counter{
+    color: slateblue;
+}
+.remaining-counter{
+    color: orangered;
+}
